@@ -1,0 +1,139 @@
+<script>
+
+function FindTip() {
+  if (q1var == 1) { // Good organisation
+    if (q2var == 1) { // Planned
+      if (q3var == 1) { // Small
+        $('#SummaryTitle').text('Use more SMART goals!');
+        $('#SummaryText').text('What is your highest priority goal right now? Take 3 minutes right now to create a SMART goal for it (SMART = Specific, Measurable, Attainable, Realistic, Timely).');
+        $('#SummaryText2').text('This framework forces you to think beyond what you want – to how you will get there.');
+      } else if (q3var == 2) { // Big
+        $('#SummaryTitle').text('Start timeboxing your days!');
+        $('#SummaryText').text('Timeboxing gives you a clear focus and reduces the frequency of your brain switching contexts, allowing you to use more of your attentional resources for what you want to do in the present moment.');
+        $('#SummaryText2').text('Take 1 minute right now to go to your calendar. Block out 1 hour timeboxes for the rest of the day and title them with what you want to focus on during each hour (don’t forget about breaks after each timebox + lunch and dinner).');
+      }
+    } else if (q2var == 2) { // Flexible
+      $('#SummaryTitle').text('Schedule your distractions!');
+      $('#SummaryText').text('We all want to check social media / news / emails occasionally to keep up to date but constantly checking them destroys our ability to focus.');
+      $('#SummaryText2').text('Go to your calendar and schedule yourself a strict 10 minute timebox to check these things at specific times of the day.  How about 9am, 12pm, 5pm and 8pm? Repeat these timeboxes every day of the week.');
+    }
+    $('#FocuspediaLink').text('📖 Read more in the Focuspedia (Ingredient #1)');
+    $('#FocuspediaLink').attr("href","https://fastasarocket.com/focuspedia/ingredient1");
+    $('#RocketLink').text('🚀 Like this tip? Then you will love Rocket. Among other things it makes good organisation easy. Tap here for more info.');
+
+  } else if (q1var == 2) {
+    if (q3var == 1) { // Small
+      if (q2var == 1) { // Planned
+        $('#SummaryTitle').text('Schedule your distractions!');
+        $('#SummaryText').text('We all want to check social media / news / emails occasionally to keep up to date but constantly checking them destroys our ability to focus.');
+        $('#SummaryText2').text('Go to your calendar and schedule yourself a strict 10 minute timebox to check these things at specific times of the day.  How about 9am, 12pm, 5pm and 8pm? Repeat these timeboxes every day of the week.');
+      } else if (q2var == 2) { // Flexible
+        $('#SummaryTitle').text('Keep your phone on Do Not Disturb throughout the day!');
+        $('#SummaryText').text('The little ding or even the bzzz of a silenced phone can and often does completely kill your focus. If you need to occasionally have notifications turned on, then the easiest way to control them is by toggling this simple setting.');
+        $('#SummaryText2').text('If you’re not using Rocket, one way to remember to turn it on is by using this habit stacking technique: after you look at your to-do list, turn your phone on Do Not Disturb.');
+      }
+    } else if (q3var == 2) { // Big
+      $('#SummaryTitle').text('Don’t use your phone first thing in the morning!');
+      $('#SummaryText').text('When you start your day with a seemingly harmless scroll through your social media or email, your brain releases a lot of dopamine and creates a higher baseline dopamine level for the day.');
+      $('#SummaryText2').text('Do your brain a favour by doing a mini dopamine fast every morning by staying off your phone (or at the very least high dopamine apps) for the first 30 minutes of the day.');
+    }
+    $('#FocuspediaLink').text('📖 Read more in the Focuspedia (Ingredient #2)');
+    $('#FocuspediaLink').attr("href","https://fastasarocket.com/focuspedia/ingredient2");
+    $('#RocketLink').text('🚀 Like this tip? Then you will love Rocket. Among other things it makes getting in the habit of eliminating distractions easier. Tap here for more info.');
+
+  } else if (q1var == 3) {
+    if (q3var == 1) { // Small
+      if (q2var == 1) { // Planned
+        $('#SummaryTitle').text('Get enough sleep!');
+        $('#SummaryText').text('There is a strong correlation between poor sleep and a decline in the ability to focus.');
+        $('#SummaryText2').text('You should figure out how many hours of sleep you need, often 7+ hours per night, and plan your routine to ensure you get it every night.');
+      } else if (q2var == 2) { // Flexible
+        $('#SummaryTitle').text('Replace your coffee with matcha!');
+        $('#SummaryText').text('As a source of caffeine and a tea with high levels of L-theanine (an antioxidant with proven benefits for focus), Matcha tea is the ultimate focus drink.');
+        $('#SummaryText2').text('Consider replacing your morning coffee with a Matcha latte or even a Matcha Cacao latte.');
+      }
+    } else if (q3var == 2) { // Big
+        if (q2var == 1) { // Planned
+        $('#SummaryTitle').text('Improve your Omega 3 to 6 ratio!');
+        $('#SummaryText').text('Our bodies can’t produce Omega 3 and Omega 6 essential fats (essential to healthy brain function) so you must get them through the foods you eat. Many processed foods are high in Omega 6, meaning most of us have a high Omega 6 to 3 ratio, which has been found to impact aspects of neurotransmission.');
+        $('#SummaryText2').text('Analyse your diet and potentially look into reducing your Omega 6 intake and supplementing your Omega 3 intake.');
+      } else if (q2var == 2) { // Flexible
+        $('#SummaryTitle').text('Have enough water + exercise!');
+        $('#SummaryText').text('Water is key to maintaining healthy brain function but 75% of Americans are chronically dehydrated. Put a jug of water on your desk in the morning and refill it during every break you take.');
+        $('#SummaryText2').text('There is also a clear benefit to concentration on the days you exercise compared to days when you do not exercise – so while you’re at it integrate exercise, even just a brief amount, into your daily routine.');
+      }
+    }
+    $('#FocuspediaLink').text('📖 Read more in the Focuspedia (Extra Ingredients)');
+    $('#FocuspediaLink').attr("href","https://fastasarocket.com/focuspedia/extra-ingredients");
+    $('#RocketLink').text('🚀 Like this tip? Then you will love Rocket. Tap here for more info.');
+
+  } else if (q1var == 4) {
+    if (q3var == 1) { // Small
+      if (q2var == 1) { // Planned
+        $('#SummaryTitle').text('Journal your distractions!');
+        $('#SummaryText').text('Next time you get distracted, simply write down when you got distracted and the thought preceding it. The goal here is not to fixate on the distraction itself but on any uncomfortable emotions that may have led to it.');
+        $('#SummaryText2').text('This is a form of Acceptance and Commitment Therapy and can help you build up more awareness of the internal situations that typically distract you, arming you with extra knowledge that can help you avoid these impulses.');
+      } else if (q2var == 2) { // Flexible
+        $('#SummaryTitle').text('Do a 20-minute meditation (once)!');
+        $('#SummaryText').text('One study found that just a single 17-minute meditation can provide a significant, near-permanent improvement to a characteristic of the brain that partly determines how distractable you are.');
+        $('#SummaryText2').text('Tonight, after dinner, find a meditation around 17 minutes long and do it (FYI the Insight Timer app is a great place to find them for free).');
+      }
+    } else if (q3var == 2) { // Big
+      $('#SummaryTitle').text('Start surfing the urge!');
+      $('#SummaryText').text('Trying to focus but suddenly get the urge to do something you shouldn’t be doing? These scenarios are the perfect application of the ‘surfing the urge 10-minute rule’ which you should get in the habit of using.');
+      $('#SummaryText2').text('1. Write down what you want to do so you don’t forget it. 2. Wait just 10 minutes. 3. If you still want to act on the urge after the 10 minutes is up, feel free to do it, but that is rarely the case.');
+    }
+    $('#FocuspediaLink').text('📖 Read more in the Focuspedia (Ingredient #4)');
+    $('#FocuspediaLink').attr("href","https://fastasarocket.com/focuspedia/ingredient4");
+    $('#RocketLink').text('🚀 Like this tip? Then you will love Rocket. Among other things it helps you keep aware of where your attention is going and helps you resist urges more easily. Tap here for more info.');
+    
+  } else if (q1var == 5) {
+    if (q3var == 1) { // Small
+      if (q2var == 1) { // Planned
+        $('#SummaryTitle').text('Break down your work into smaller sub-tasks!');
+        $('#SummaryText').text('Often take a while to get started focusing on something? Break it down into lots of small easy sub-tasks that will take between ~25-45 minutes.');
+        $('#SummaryText2').text('This great little hack can provide quick hits of dopamine whenever you finish a subtask, giving your brain more of a reason to stick to that long-winded project rather than constantly flick to high-dopamine work activities like checking email. This trick can also really help to get over that initial hurdle and start gaining some momentum.');
+      } else if (q2var == 2) { // Flexible
+        $('#SummaryTitle').text('Reward yourself with frequent breaks!');
+        $('#SummaryText').text('Work can be intensely rewarding in the long term, so we just need to work some magic to carry over that motivation to the short term too. In essence, we want to reward ourselves more when we’re doing the things we want (in this case, focusing on work). You can turn breaks into an opportunity to celebrate small wins throughout the day.');
+        $('#SummaryText2').text('Take frequent breaks and reward yourself with a snack, a walk or even a coffee with a friend. This can help make work feel more fun even if the work you need to do isn’t very intrinsically rewarding.');
+      }
+    } else if (q3var == 2) { // Big
+      if (q2var == 1) { // Planned
+        $('#SummaryTitle').text('Reward yourself with frequent breaks!');
+        $('#SummaryText').text('Work can be intensely rewarding in the long term, so we just need to work some magic to carry over that motivation to the short term too. In essence, we want to reward ourselves more when we’re doing the things we want (in this case, focusing on work). You can turn breaks into an opportunity to celebrate small wins throughout the day.');
+        $('#SummaryText2').text('Take frequent breaks and reward yourself with a snack, a walk or even a coffee with a friend. This can help make work feel more fun even if the work you need to do isn’t very intrinsically rewarding.');
+      } else if (q2var == 2) { // Flexible
+        $('#SummaryTitle').text('Reimagine work as a challenge!');
+        $('#SummaryText').text('Even repetitive and boring tasks can be reimagined into a challenge as a very effective way to get into a deep state of focus. If you’re creative you can create an infinite number of intrinsically motivating challenges anywhere you look. Trying to get through a bunch of boring emails? Why not challenge yourself to do 1 email per minute?');
+        $('#SummaryText2').text('Here’s a challenge for you: next time you want to focus challenge yourself to focus 100% of your attention on the task at hand for a full 25 minute timer (it may be harder than you think).');
+      }
+    }
+    $('#FocuspediaLink').text('📖 Read more in the Focuspedia (Ingredient #3)');
+    $('#FocuspediaLink').attr("href","https://fastasarocket.com/focuspedia/ingredient3");
+    $('#RocketLink').text('🚀 Like this tip? Then you will love Rocket. Among other things it makes it easy to stay motivated on whatever you want or need to focus on. Tap here for more info.');
+
+  } else if (q1var == 6) {
+    if (q3var == 1) { // Small
+      if (q2var == 1) { // Planned
+        $('#SummaryTitle').text('Work somewhere public and productive!');
+        $('#SummaryText').text('If your workplace has built up an atmosphere of productivity, you are less likely to spend all day scrolling through Instagram there because you’ll feel guilty that all your colleagues are working well and you’re not.');
+        $('#SummaryText2').text('Working at home or in an office space? Join a thriving co-working space – even if it’s just 1 day per week.');
+      } else if (q2var == 2) { // Flexible
+        $('#SummaryTitle').text('Create a pact that you don’t want to lose!');
+        $('#SummaryText').text('If you’re serious about something, and that something isn’t happening, it might be time to create an equally serious pact with yourself.');
+        $('#SummaryText2').text('Start a pact right now with a friend who can keep you accountable. Focus on what you want to for 30 minutes, 10 days in a row or you will have to pay them $100.');
+      }
+    } else if (q3var == 2) { // Big
+      $('#SummaryTitle').text('Use timers like Rocket timers!');
+      $('#SummaryText').text('3…2…1… Often we use these countdowns to tell ourselves we’re going to do something after a few seconds. And it works, which is why we do it.');
+      $('#SummaryText2').text('Likewise, a timer is a simple and powerful way to use your commitment bias to your advantage – so you stick to focus for the period of time you wanted to. Start using 25 minute timers (a very popular length of time).');
+    }
+    $('#FocuspediaLink').text('📖 Read more in the Focuspedia (Ingredient #5)');
+    $('#FocuspediaLink').attr("href","https://fastasarocket.com/focuspedia/ingredient5");
+    $('#RocketLink').text('🚀 Like this tip? Then you will love Rocket. Among other things it helps you keep accountable with yourself and with friends. Tap here for more info.');
+  }
+
+}
+
+</script>
