@@ -1,1 +1,1 @@
-<script> var nextExamples = [[Collection], [Collection], [Collection], [Collection], [Collection], [Collection], [Collection], [Collection]] </script>
+<script> var nextExamples = [] </script>
