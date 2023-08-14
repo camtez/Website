@@ -39,4 +39,4 @@ var sharingTexts = ['We\'ll give you a little bit to finish sharing it.', 'We\'l
 
 var ideaTexts = ['An insanely great idea:','Our revolutionary idea:','The idea that changes everything:','Our next game-changing idea:','A breakthrough idea:'];
 
-var ExampleTexts = ['Let\'s pull back the curtain:','Let me show you the magic behind it:','Dive in with me:','This is where it gets insanely great:','Here\'s the essence of our innovation:','Imagine this:'];
+var exampleTexts = ['Let\'s pull back the curtain:','Let me show you the magic behind it:','Dive in with me:','This is where it gets insanely great:','Here\'s the essence of our innovation:','Imagine this:'];
